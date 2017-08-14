@@ -1,6 +1,4 @@
 -cp src
 -main Main
 -cs csharp-bin
--cmd cd csharp-bin/bin
--cmd Main.exe
--cmd pause
+

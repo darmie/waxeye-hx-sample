@@ -2,5 +2,5 @@
 -main Main
 -cpp bin
 -cmd cd bin
--cmd Main.exe
--cmd pause
+
+

@@ -28,7 +28,7 @@ class Main
 
 	}
 
-	private static function binOp(ast:AST, fn:AST->Dynamic, ch:String, op1:Dynamic, op2:Dynamic):String
+	private static function binOp(ast:AST, fn:AST->Dynamic, ch:String, op1:Dynamic, op2:Dynamic):Dynamic
 	{
 		var chil:Array<Any> = ast.children;
 		// apply the visitor function to our first sub-tree
@@ -54,7 +54,7 @@ class Main
 		
 	}
 	
-	private static function sum(ast:AST):String
+	private static function sum(ast:AST):Dynamic
 	{
 		var add = function(a, b){return a + b; };
 		var sub = function(a, b){return a - b; };
@@ -63,7 +63,7 @@ class Main
 	}
 	
 	
-	private static function prod(ast:AST):String
+	private static function prod(ast:AST):Dynamic
 	{
 		var mult = function(a, b){return a * b; };
 		var div = function(a, b){return a / b; };

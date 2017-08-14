@@ -1,4 +1,3 @@
 -cp src
 -java java-bin
 -main Main
--cmd java -jar java-bin/Main.jar
