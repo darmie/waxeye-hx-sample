@@ -18,6 +18,7 @@ class Parser extends org.waxeye.parser.Parser
     /**
      * Creates a new Parser.
      */
+	
     public function new()
     {
         super(makeDefinition(), 'calc');
@@ -28,6 +29,7 @@ class Parser extends org.waxeye.parser.Parser
      *
      * @return The definitions grammar for the parser.
      */
+	@:keep
     private function makeDefinition():Dynamic
     {
         var def:Dynamic = {calc : {'mode' : Modes.NORMAL, 'exp' : new Exp(ExpType.SEQ, [new Exp(ExpType.NT, ['ws']),
